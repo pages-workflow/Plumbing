@@ -1,101 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Accessible and secure plumbing services website.">
-  <title>Reliable Plumbing</title>
-  <style>
-    body {font-family: ui-sans-serif,-apple-system,Segoe UI,Roboto,sans-serif; line-height:1.6; margin:0; color:#000; background:#fff;}
-    header, nav, main, section, footer {padding:1rem;}
-    nav ul {list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:1rem;}
-    nav a {color:#0645AD; text-decoration:none;}
-    nav a:hover, nav a:focus {text-decoration:underline;}
-    .skip-link {position:absolute; left:-1000px; top:0;}
-    .skip-link:focus {left:0; background:#fff; padding:0.5rem; outline:2px solid #0055aa;}
-    main {max-width:60ch; margin:0 auto;}
-    figure {margin:0;}
-    img {max-width:100%; height:auto;}
-    a:focus {outline:2px solid #0055aa; outline-offset:2px;}
-    footer {text-align:center; border-top:1px solid #ccc;}
-    @media print {
-      nav {display:none;}
-      body {font-size:12pt;}
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Plumbing</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to content</a>
   <header>
-    <h1>Reliable Plumbing</h1>
+    <h1>Plumbing Showcase</h1>
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#accessibility">Accessibility</a></li>
-        <li><a href="#privacy">Privacy</a></li>
-        <li><a href="#contact">How to reach us</a></li>
-      </ul>
+      <a href="#left">Left Image</a>
+      <a href="#right">Right Image</a>
     </nav>
   </header>
-  <main id="main">
-    <section id="home">
-      <h2>Home</h2>
+  <main>
+    <section id="left" class="pair">
       <figure>
-        <img src="pipe.svg" alt="Simple illustration of a pipe" width="120" height="80">
+        <img src="ai-left.svg" alt="Colorful AI generated lines">
+        <figcaption>Left AI Art</figcaption>
       </figure>
-      <p>We offer dependable plumbing solutions for homes and businesses, ensuring water flows where it should.</p>
+      <article>
+        <h2>Left Side</h2>
+        <p>This example places the AI generated image on the left and text on the right. All elements are reachable using the keyboard.</p>
+      </article>
     </section>
-    <section id="services">
-      <h2>Services</h2>
-      <ul>
-        <li>Leak repairs</li>
-        <li>Pipe installations</li>
-        <li>Drain cleaning</li>
-        <li>Emergency plumbing</li>
-      </ul>
-    </section>
-    <section id="about">
-      <h2>About</h2>
-      <p>Founded in 1999, Reliable Plumbing is a family-run business dedicated to honest work and customer satisfaction.</p>
-    </section>
-    <section id="faq">
-      <h2>FAQ</h2>
-      <details>
-        <summary>Do you offer 24/7 service?</summary>
-        <p>Yes, our emergency plumbers are available around the clock.</p>
-      </details>
-      <details>
-        <summary>Are your services insured?</summary>
-        <p>All our work is fully licensed and insured.</p>
-      </details>
-    </section>
-    <section id="pricing">
-      <h2>Pricing</h2>
-      <p>Standard call-out: $80.</p>
-      <p>Hourly rate: $60.</p>
-      <p>Emergency services: $120 per hour.</p>
-    </section>
-    <section id="accessibility">
-      <h2>Accessibility Statement</h2>
-      <p>We strive to make this site and our services accessible. If you encounter any barriers, please let us know via the contact details below.</p>
-    </section>
-    <section id="privacy">
-      <h2>Privacy</h2>
-      <p>We do not collect, store, or share personal information on this website. We do not use cookies, analytics, tracking pixels, or third-party scripts. If you contact us by email or phone, your message is handled directly in our email or phone provider and not through this website. We do not sell or share personal information.</p>
-      <p>For California/EU visitors: since we do not collect personal information on this site, rights requests (access, delete, opt-out) generally do not apply. If you believe otherwise, contact us and we will respond.</p>
-    </section>
-    <section id="contact">
-      <h2>How to reach us</h2>
-      <p>Email: example@plumbing.com</p>
-      <p>Phone: 555-123-4567</p>
+    <section id="right" class="pair reverse">
+      <article>
+        <h2>Right Side</h2>
+        <p>Here the image is on the right with accompanying text on the left. The layout adapts to different screen sizes without fixed positioning.</p>
+      </article>
+      <figure>
+        <img src="ai-right.svg" alt="Abstract AI generated lines">
+        <figcaption>Right AI Art</figcaption>
+      </figure>
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 Reliable Plumbing. All rights reserved.</p>
+    <p>&copy; 2023 Plumbing</p>
   </footer>
 </body>
 </html>

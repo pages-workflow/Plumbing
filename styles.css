@@ -1,0 +1,49 @@
+:focus {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+
+header, nav, main, section, article, figure, footer {
+  margin: 1rem;
+}
+
+nav a {
+  margin-right: 1rem;
+}
+
+.pair {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pair.reverse {
+  flex-direction: row-reverse;
+}
+
+figure {
+  max-width: 40%;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .pair,
+  .pair.reverse {
+    flex-direction: column;
+  }
+
+  figure,
+  article {
+    max-width: 100%;
+  }
+}
